@@ -13,9 +13,7 @@ type RetrieveAccount struct {
 
 func Test() RetrieveAccount {
 	xmlData, err := ioutil.ReadFile("./retrieveAccountResponse.xml")
-	if e != nil {
-		panic(e)
-	}
+	CheckError(e)
 
 	var resp RetrieveAccount
 	xml.Unmarshal(xmlData, &resp)
