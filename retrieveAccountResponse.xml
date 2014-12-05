@@ -1,0 +1,105 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header xmlns:v1="http://www.sungard.com/bsil/acctmgmt/v1-0" xmlns:v11="http://www.sungard.com/ws/v1-0" xmlns:v12="http://www.sungard.com/product/v1-0"/>
+   <soapenv:Body xmlns:v1="http://www.sungard.com/bsil/acctmgmt/v1-0" xmlns:v11="http://www.sungard.com/ws/v1-0" xmlns:v12="http://www.sungard.com/product/v1-0">
+      <ns0:retrieveAccountResponse xmlns:ns3="http://www.sungard.com/common/v1-0" xmlns:ns2="http://www.sungard.com/ebsws/acctmgmt" xmlns:ns1="http://www.sungard.com/brmws/acctmgmt/v1-0" xmlns:ns0="http://www.sungard.com/bsil/acctmgmt/v1-0">
+         <ns0:accountNumber>644405</ns0:accountNumber>
+         <ns0:version>293</ns0:version>
+         <ns0:companyGUID>F9C22B8B-E277-8DFD-E043-0A42010A7B87</ns0:companyGUID>
+         <ns0:companyName>NOT JONES CORP</ns0:companyName>
+         <ns0:companyAddress xsi:type="ns3:USLocation" xmlns:ns2="http://www.sungard.com/brmws/acctmgmt/v1-0" xmlns:ns4="http://www.sungard.com/product/v1-0" xmlns:ns5="http://www.sungard.com/payment/v1-0" xmlns:ns6="http://www.sungard.com/cloud/v1-0" xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns3:locale>en_US</ns3:locale>
+            <ns3:type>SHIPTO</ns3:type>
+            <ns3:address>1234 NOT MAIN ST SUITE 1010</ns3:address>
+            <ns3:city>PHILADELPHIA</ns3:city>
+            <ns3:state>PA</ns3:state>
+            <ns3:zip>19151</ns3:zip>
+         </ns0:companyAddress>
+         <ns0:marketIndicator>US</ns0:marketIndicator>
+         <ns0:paymentTerms xmlns:ns2="http://www.sungard.com/brmws/acctmgmt/v1-0" xmlns:ns4="http://www.sungard.com/product/v1-0" xmlns:ns5="http://www.sungard.com/payment/v1-0" xmlns:ns6="http://www.sungard.com/cloud/v1-0" xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+            <ns3:name>30 NET</ns3:name>
+            <ns3:daysDue>30</ns3:daysDue>
+         </ns0:paymentTerms>
+         <ns0:createdDate>2014-05-19T19:54:43Z</ns0:createdDate>
+         <ns0:status>ACTIVE</ns0:status>
+         <ns0:contacts>
+            <ns0:contact xmlns:ns2="http://www.sungard.com/brmws/acctmgmt/v1-0" xmlns:ns4="http://www.sungard.com/product/v1-0" xmlns:ns5="http://www.sungard.com/payment/v1-0" xmlns:ns6="http://www.sungard.com/cloud/v1-0" xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+               <ns3:contactType>CLOUD_DIRECTOR</ns3:contactType>
+               <ns3:first>Admin</ns3:first>
+               <ns3:last>Admin</ns3:last>
+               <ns3:title>Test</ns3:title>
+               <ns3:locations>
+                  <ns3:location xsi:type="ns3:USLocation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                     <ns3:locale>en_US</ns3:locale>
+                     <ns3:type>BILLING</ns3:type>
+                     <ns3:address>123 Main St Ste 100</ns3:address>
+                     <ns3:city>Wayne</ns3:city>
+                     <ns3:state>PA</ns3:state>
+                     <ns3:zip>19087</ns3:zip>
+                  </ns3:location>
+               </ns3:locations>
+            </ns0:contact>
+         </ns0:contacts>
+         <ns0:productLines xmlns:ns2="http://www.sungard.com/brmws/acctmgmt/v1-0" xmlns:ns4="http://www.sungard.com/product/v1-0" xmlns:ns5="http://www.sungard.com/payment/v1-0" xmlns:ns6="http://www.sungard.com/cloud/v1-0" xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+            <ns0:accountProductLine xsi:type="ns6:CloudService" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+               <ns4:status>ACTIVE</ns4:status>
+               <ns4:serviceCreditBalance>0</ns4:serviceCreditBalance>
+               <ns6:domain>
+                  <ns6:csId>ffffffff-ffff-ffff-ffff-ffffff644405</ns6:csId>
+               </ns6:domain>
+               <ns6:allowedWorkplaceTags>
+                  <ns6:tags>
+                     <ns6:name>billing</ns6:name>
+                     <ns6:description>legal billing server</ns6:description>
+                  </ns6:tags>
+                  <ns6:tags>
+                     <ns6:name>orange</ns6:name>
+                     <ns6:description>best color</ns6:description>
+                  </ns6:tags>
+                  <ns6:tags>
+                     <ns6:name>foo</ns6:name>
+                     <ns6:description>bar</ns6:description>
+                  </ns6:tags>
+                  <ns6:tags>
+                     <ns6:name>asdfasdf</ns6:name>
+                     <ns6:description>asdfasdf</ns6:description>
+                  </ns6:tags>
+                  <ns6:tags>
+                     <ns6:name>bla</ns6:name>
+                     <ns6:description>blah</ns6:description>
+                  </ns6:tags>
+                  <ns6:tags>
+                     <ns6:name>dave</ns6:name>
+                     <ns6:description>ffoo</ns6:description>
+                  </ns6:tags>
+                  <ns6:tags>
+                     <ns6:name>fooos</ns6:name>
+                     <ns6:description>ball</ns6:description>
+                  </ns6:tags>
+                  <ns6:tags>
+                     <ns6:name>stuff</ns6:name>
+                     <ns6:description/>
+                  </ns6:tags>
+                  <ns6:tags>
+                     <ns6:name>delete</ns6:name>
+                     <ns6:description/>
+                  </ns6:tags>
+                  <ns6:tags>
+                     <ns6:name>smtest1</ns6:name>
+                     <ns6:description>smtest1</ns6:description>
+                  </ns6:tags>
+                  <ns6:tags>
+                     <ns6:name>smtest2</ns6:name>
+                     <ns6:description>smtest2</ns6:description>
+                  </ns6:tags>
+               </ns6:allowedWorkplaceTags>
+               <ns6:invoiceDeliveryAddress>dave@mailinator.com</ns6:invoiceDeliveryAddress>
+               <ns6:directorUser>
+                  <ns3:userId>8185a418-c70d-11e3-9297-005056ba5e1b</ns3:userId>
+                  <ns3:email>cloud_test_user@sungardas.com</ns3:email>
+               </ns6:directorUser>
+               <ns6:ccDirectorOnNotifications>false</ns6:ccDirectorOnNotifications>
+            </ns0:accountProductLine>
+         </ns0:productLines>
+      </ns0:retrieveAccountResponse>
+   </soapenv:Body>
+</soapenv:Envelope>

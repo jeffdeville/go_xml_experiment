@@ -1,0 +1,28 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://www.sungard.com/bsil/acctmgmt/v1-0" xmlns:v11="http://www.sungard.com/ws/v1-0" xmlns:v12="http://www.sungard.com/product/v1-0">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v1:retrieveAccountRequest>
+         <v11:client>
+            <v11:userId>?</v11:userId>
+            <v11:userApplicationDN>?</v11:userApplicationDN>
+         </v11:client>
+         <v1:accountNumber>{{ .Id }}</v1:accountNumber>
+         <!--Optional:-->
+         <v1:includeContacts>true</v1:includeContacts>
+         <!--Optional:-->
+         <v1:includePaymentMethods>true</v1:includePaymentMethods>
+         <!--Optional:-->
+         <v1:includeBillingData>false</v1:includeBillingData>
+         <!--Optional:-->
+         <v1:includeNotes>true</v1:includeNotes>
+         <!--Optional:-->
+         <v1:includeProductLines>
+            <!--1 or more repetitions:-->
+            <v1:productLine>
+               <v12:name>NOBODY</v12:name>
+               <v12:designator>CLOUD</v12:designator>
+           </v1:productLine>
+         </v1:includeProductLines>
+      </v1:retrieveAccountRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
