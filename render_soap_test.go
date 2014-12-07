@@ -8,5 +8,6 @@ import (
 )
 
 var _ = Describe("RenderSoap", func() {
+
 	// How should this be tested?
 })
